@@ -80,7 +80,7 @@
     line-height: 0;
   }
   .wordmark img {
-    height: 34px;
+    height: 130px;
     width: auto;
     display: block;
   }
@@ -190,13 +190,16 @@
     align-items: flex-start;
     flex-wrap: wrap;
   }
-  .about-block .label {
-    font-family: 'Fraunces', serif;
-    font-size: 1rem;
-    color: var(--denim);
+  .about-block .photo {
     width: 160px;
     flex-shrink: 0;
-    padding-top: 4px;
+  }
+  .about-block .photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
   }
   .about-block .prose p { margin: 0 0 16px; color: var(--ink-soft); font-size: 1.05rem; }
   .about-block .prose p:last-child { margin-bottom: 0; }
@@ -213,7 +216,7 @@
     color: var(--charcoal-text);
     padding: 48px 0 36px;
   }
-  footer .wordmark img { height: 30px; width: auto; display: block; }
+  footer .wordmark img { height: 100px; width: auto; display: block; }
   footer .foot-grid {
     display: flex;
     justify-content: space-between;
@@ -238,7 +241,7 @@
 
 <header>
   <div class="wrap">
-    <a href="#top" class="wordmark"><img src="logo-navy-on-cream.svg" alt="Midwest & Main"></a>
+    <a href="#top" class="wordmark"><img src="logo-navy-on-cream.png" alt="Midwest & Main"></a>
     <nav>
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
@@ -294,7 +297,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2>How it works</h2>
-        <p>Three steps, start to finish. No long contracts, no jargon you have to decode.</p>
+        <p>Three steps, start to finish. No jargon you have to decode.</p>
       </div>
       <div class="steps">
         <div class="step">
@@ -318,8 +321,11 @@
 
   <section id="about" class="section-alt">
     <div class="wrap">
+      <div class="section-head">
+        <h2>About</h2>
+      </div>
       <div class="about-block">
-        <div class="label">About</div>
+        <div class="photo"><img src="adam-headshot.jpeg" alt="Adam, owner of Midwest & Main"></div>
         <div class="prose">
           <p>I'm Adam, owner of <strong>Midwest &amp; Main</strong>. I'm early in my consulting work and building out my portfolio — which means founding clients get more of my direct attention and time, at a lower rate than I'll charge later.</p>
           <p>If you're a business owner losing leads to a phone that doesn't get answered fast enough, let's talk.</p>
@@ -342,7 +348,7 @@
 
 <footer>
   <div class="wrap">
-    <a href="#top" class="wordmark"><img src="logo-cream-on-navy.svg" alt="Midwest & Main"></a>
+    <a href="#top" class="wordmark"><img src="logo-cream-on-navy.png" alt="Midwest & Main"></a>
     <div class="foot-grid">
       <p class="foot-meta">Based in Le Mars, Iowa — working with small businesses across the Midwest and beyond.</p>
       <p class="foot-meta"><a href="mailto:adam@midwestandmain.com">adam@midwestandmain.com</a></p>
