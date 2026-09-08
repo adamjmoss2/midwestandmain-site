@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Midwest & Main — AI Automation for Small Businesses</title>
+<meta name="description" content="Missed-call text-back, automated follow-up, and CRM systems built for small and rural businesses. Free discovery calls.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F1ECDF;
+    --paper-dim: #E7E0CD;
+    --ink: #211C16;
+    --ink-soft: #4A4339;
+    --denim: #2E4560;
+    --denim-deep: #223449;
+    --rust: #9C3B26;
+    --rust-deep: #7E2E1C;
+    --gold: #C08A2E;
+    --charcoal: #201C17;
+    --charcoal-text: #DCD4C2;
+    --rule: rgba(33, 28, 22, 0.16);
+    --max: 780px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.15;
+  }
+
+  a { color: var(--denim); text-decoration-color: rgba(46,69,96,0.35); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--denim); }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--denim);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  .prose { max-width: var(--max); }
+
+  /* ---------- Header ---------- */
+  header {
+    padding: 26px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .wordmark {
+    display: inline-block;
+    line-height: 0;
+  }
+  .wordmark img {
+    height: 34px;
+    width: auto;
+    display: block;
+  }
+  nav { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  nav a {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  nav a:hover { color: var(--ink); border-bottom-color: var(--gold); }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 84px 0 72px; }
+  .hero h1 {
+    font-size: clamp(2.1rem, 4.4vw, 3.15rem);
+    letter-spacing: -0.01em;
+    max-width: 15ch;
+  }
+  .hero .lede {
+    margin-top: 26px;
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+  .hero .lede strong { color: var(--ink); font-weight: 600; }
+
+  .cta-row { margin-top: 38px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--rust);
+    color: #FBF6EC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 26px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid var(--rust-deep);
+  }
+  .btn-primary:hover { background: var(--rust-deep); }
+
+  .cta-note { font-size: 0.92rem; color: var(--ink-soft); font-style: italic; }
+
+  /* ---------- Section shell ---------- */
+  section { padding: 68px 0; }
+  .section-alt { background: var(--paper-dim); }
+  .section-head { max-width: 60ch; margin-bottom: 40px; }
+  .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.05rem); }
+  .section-head p { margin-top: 14px; color: var(--ink-soft); font-size: 1.05rem; }
+
+  /* ---------- Services: menu-board list ---------- */
+  .service-list { border-top: 1px solid var(--rule); }
+  .service-row {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .service-row h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+  }
+  .service-row h3::before {
+    content: "";
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--denim);
+    margin-right: 10px;
+    transform: translateY(-2px);
+  }
+  .service-row p { margin: 0; color: var(--ink-soft); max-width: 46ch; }
+
+  @media (max-width: 640px) {
+    .service-row { grid-template-columns: 1fr; gap: 8px; }
+  }
+
+  /* ---------- How it works ---------- */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    margin-top: 8px;
+  }
+  .step { border-top: 3px solid var(--denim); padding-top: 18px; }
+  .step .num {
+    font-family: 'Fraunces', serif;
+    font-size: 2.1rem;
+    color: var(--denim);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .step h3 { font-size: 1.1rem; margin-bottom: 8px; }
+  .step p { margin: 0; color: var(--ink-soft); font-size: 0.98rem; }
+
+  @media (max-width: 720px) {
+    .steps { grid-template-columns: 1fr; gap: 30px; }
+  }
+
+  /* ---------- About ---------- */
+  .about-block {
+    display: flex;
+    gap: 44px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .about-block .label {
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    color: var(--denim);
+    width: 160px;
+    flex-shrink: 0;
+    padding-top: 4px;
+  }
+  .about-block .prose p { margin: 0 0 16px; color: var(--ink-soft); font-size: 1.05rem; }
+  .about-block .prose p:last-child { margin-bottom: 0; }
+  .about-block .prose strong { color: var(--ink); }
+
+  /* ---------- Final CTA ---------- */
+  .final-cta { text-align: left; }
+  .final-cta h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); max-width: 20ch; }
+  .final-cta p { margin-top: 16px; color: var(--ink-soft); font-size: 1.08rem; max-width: 52ch; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: var(--charcoal);
+    color: var(--charcoal-text);
+    padding: 48px 0 36px;
+  }
+  footer .wordmark img { height: 30px; width: auto; display: block; }
+  footer .foot-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 22px;
+  }
+  footer a { color: var(--charcoal-text); text-decoration-color: rgba(220,212,194,0.4); }
+  footer a:hover { text-decoration-color: var(--charcoal-text); }
+  .foot-meta { color: #A79E8C; font-size: 0.9rem; max-width: 40ch; }
+  .foot-copy { margin-top: 36px; font-size: 0.85rem; color: #8B8272; }
+
+  ::selection { background: var(--gold); color: var(--ink); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#top" class="wordmark"><img src="assets/logo-navy-on-cream.svg" alt="Midwest & Main"></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>The customer who couldn't reach you called your competitor next.</h1>
+      <p class="lede">
+        I help small business owners <strong>capture and follow up with the leads they're already getting</strong> — instead of losing them to missed calls, slow responses, and manual busywork. I build automated systems using GoHighLevel and n8n that work while you're with a customer, not just when you're at a desk.
+      </p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#contact">Book a free discovery call</a>
+        <span class="cta-note">No pitch. Just a conversation about your business.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What I build</h2>
+        <p>Systems built specifically for how small and rural businesses actually operate — not enterprise software forced into a small shop.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-row">
+          <h3>Missed-Call Text-Back</h3>
+          <p>When you can't pick up, your business still replies — automatically, in seconds, so the caller doesn't hang up and dial the next name on the list.</p>
+        </div>
+        <div class="service-row">
+          <h3>Automated Lead Follow-Up</h3>
+          <p>No more sticky notes and forgotten callbacks. Every lead gets followed up with, on schedule, whether you remember to or not.</p>
+        </div>
+        <div class="service-row">
+          <h3>AI Chatbots</h3>
+          <p>Answers common questions any time of day — so you're not repeating yourself for the twentieth time this week.</p>
+        </div>
+        <div class="service-row">
+          <h3>CRM Workflows</h3>
+          <p>One place to see every lead and customer, built in GoHighLevel and set up around how you actually run your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <p>Three steps, start to finish. No long contracts, no jargon you have to decode.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Free discovery call</h3>
+          <p>We talk about your business, not my pitch. Thirty minutes, no obligation.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>I build your system</h3>
+          <p>Set up in GoHighLevel and n8n, tailored to your business — not a one-size-fits-all template.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>You start capturing leads</h3>
+          <p>I test everything, hand it off, and stick around to make sure it keeps working.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-alt">
+    <div class="wrap">
+      <div class="about-block">
+        <div class="label">About</div>
+        <div class="prose">
+          <p>I'm Adam, owner of <strong>Midwest &amp; Main</strong>. I'm early in my consulting work and building out my portfolio — which means founding clients get more of my direct attention and time, at a lower rate than I'll charge later.</p>
+          <p>If you're a business owner losing leads to a phone that doesn't get answered fast enough, let's talk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="final-cta">
+    <div class="wrap">
+      <h2>Discovery calls are always free.</h2>
+      <p>I'd rather listen to your actual problem first than pitch you something you don't need. Reach out and let's find a time to talk.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="mailto:adam@midwestandmain.com">Email adam@midwestandmain.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="wordmark"><img src="assets/logo-cream-on-navy.svg" alt="Midwest & Main"></a>
+    <div class="foot-grid">
+      <p class="foot-meta">Based in Le Mars, Iowa — working with small businesses across the Midwest and beyond.</p>
+      <p class="foot-meta"><a href="mailto:adam@midwestandmain.com">adam@midwestandmain.com</a></p>
+    </div>
+    <p class="foot-copy">&copy; 2026 Midwest &amp; Main. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
