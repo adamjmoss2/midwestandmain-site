@@ -3,147 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms and Conditions — Midwest and Main</title>
+<title>Terms and Conditions — Midwest & Main</title>
 <meta name="description" content="Terms and Conditions for Midwest and Main, LLC, including SMS/text messaging terms.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --parchment: #F2EDE1;
-    --parchment-deep: #E8E0CE;
-    --navy: #1B2A41;
-    --navy-soft: #2E4058;
-    --rust: #B5502E;
-    --gold: #C9A227;
-    --ink: #24211B;
-    --line: rgba(27, 42, 65, 0.14);
+    --paper: #F1ECDF;
+    --paper-dim: #E7E0CD;
+    --ink: #211C16;
+    --ink-soft: #4A4339;
+    --denim: #2E4560;
+    --denim-deep: #223449;
+    --rust: #9C3B26;
+    --rust-deep: #7E2E1C;
+    --gold: #C08A2E;
+    --charcoal: #201C17;
+    --charcoal-text: #DCD4C2;
+    --rule: rgba(33, 28, 22, 0.16);
+    --max: 780px;
   }
 
   * { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
 
   body {
     margin: 0;
-    background: var(--parchment);
+    background: var(--paper);
     color: var(--ink);
     font-family: 'Inter', -apple-system, sans-serif;
     font-size: 17px;
-    line-height: 1.65;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
   }
 
   h1, h2 {
     font-family: 'Fraunces', Georgia, serif;
-    color: var(--navy);
     font-weight: 600;
+    color: var(--ink);
+    margin: 0;
     line-height: 1.15;
   }
 
-  a { color: var(--rust); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-  a:hover { color: var(--navy); }
-  a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  a { color: var(--denim); text-decoration-color: rgba(46,69,96,0.35); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--denim); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--denim); outline-offset: 3px; }
 
-  header {
-    border-bottom: 1px solid var(--line);
-    background: var(--parchment);
-  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
 
-  .header-inner {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 28px 24px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-  }
+  header { padding: 26px 0; border-bottom: 1px solid var(--rule); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+  .wordmark { display: inline-block; line-height: 0; }
+  .wordmark img { height: 120px; width: auto; display: block; }
+  nav { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  nav a { font-size: 0.95rem; color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav a:hover { color: var(--ink); border-bottom-color: var(--gold); }
 
-  .wordmark {
-    font-family: 'Fraunces', serif;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: var(--navy);
-    text-decoration: none;
-    letter-spacing: 0.01em;
-  }
+  main { max-width: var(--max); margin: 0 auto; padding: 64px 28px 96px; }
 
-  .home-link {
-    font-size: 0.9rem;
-    color: var(--navy-soft);
-  }
-
-  main {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 56px 24px 96px;
-  }
-
-  .page-title {
-    font-size: clamp(2.1rem, 5vw, 2.7rem);
-    margin: 0 0 8px;
-  }
-
-  .meta {
-    color: var(--navy-soft);
-    font-size: 0.95rem;
-    margin: 0 0 48px;
-    border-left: 3px solid var(--gold);
-    padding-left: 14px;
-  }
+  .page-title { font-size: clamp(2.1rem, 4.4vw, 2.8rem); margin-bottom: 8px; }
+  .meta { color: var(--ink-soft); font-size: 0.95rem; margin: 0 0 48px; border-left: 3px solid var(--gold); padding-left: 14px; }
 
   section { margin-bottom: 40px; }
-
-  section h2 {
-    font-size: 1.35rem;
-    margin: 0 0 14px;
-    padding-top: 4px;
-  }
-
-  section p, section li { max-width: 68ch; }
-
-  p { margin: 0 0 16px; }
-
-  ul { margin: 0 0 16px; padding-left: 22px; }
+  section h2 { font-size: 1.3rem; margin: 0 0 14px; }
+  p { margin: 0 0 16px; color: var(--ink-soft); }
+  ul { margin: 0 0 16px; padding-left: 22px; color: var(--ink-soft); }
   li { margin-bottom: 8px; }
-
-  strong { color: var(--navy); }
+  strong { color: var(--ink); }
 
   .sms-box {
-    background: var(--parchment-deep);
-    border: 1px solid var(--line);
+    background: var(--paper-dim);
+    border: 1px solid var(--rule);
     border-left: 3px solid var(--rust);
     border-radius: 4px;
     padding: 28px 28px 8px;
   }
-
   .sms-box p:last-child { margin-bottom: 0; }
 
-  hr {
-    border: none;
-    border-top: 1px solid var(--line);
-    margin: 40px 0;
-  }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
 
   footer {
-    border-top: 1px solid var(--line);
-    padding: 32px 24px;
-    text-align: center;
-    color: var(--navy-soft);
-    font-size: 0.9rem;
+    background: var(--charcoal);
+    color: var(--charcoal-text);
+    padding: 48px 0 36px;
+    margin-top: 40px;
   }
+  footer .wordmark img { height: 90px; width: auto; display: block; }
+  footer .foot-grid { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 24px; margin-top: 22px; }
+  footer a { color: var(--charcoal-text); text-decoration-color: rgba(220,212,194,0.4); }
+  footer a:hover { text-decoration-color: var(--charcoal-text); }
+  .foot-meta { color: #A79E8C; font-size: 0.9rem; max-width: 40ch; margin: 0; }
+  .foot-links a { margin-right: 18px; }
+  .foot-copy { margin-top: 36px; font-size: 0.85rem; color: #8B8272; }
 
-  @media (max-width: 500px) {
-    .sms-box { padding: 22px 20px 6px; }
-  }
+  @media (max-width: 500px) { .sms-box { padding: 22px 20px 6px; } }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="header-inner">
-    <a class="wordmark" href="index.html">Midwest &amp; Main</a>
-    <a class="home-link" href="index.html">&larr; Back to home</a>
+  <div class="wrap">
+    <a href="index.html" class="wordmark"><img src="logo-navy-on-cream.png" alt="Midwest & Main"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
@@ -228,7 +193,15 @@
 </main>
 
 <footer>
-  &copy; 2026 Midwest and Main, LLC. All rights reserved.
+  <div class="wrap">
+    <a href="index.html" class="wordmark"><img src="logo-cream-on-navy.png" alt="Midwest & Main"></a>
+    <div class="foot-grid">
+      <p class="foot-meta">Based in Le Mars, Iowa — working with small businesses across the Midwest and beyond.</p>
+      <p class="foot-meta"><a href="mailto:adam@midwestandmain.com">adam@midwestandmain.com</a></p>
+      <p class="foot-meta foot-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms and Conditions</a></p>
+    </div>
+    <p class="foot-copy">&copy; 2026 Midwest &amp; Main. All rights reserved.</p>
+  </div>
 </footer>
 
 </body>
