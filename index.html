@@ -9,20 +9,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
+ :root {
   /* Official brand colors (from logo stylesheet) */
-  --parchment: #FDFBF7;        /* Warm Cream */
   --navy: #1B2A4A;             /* Dark Navy */
+  --cream: #FDFBF7;            /* Warm Cream */
   --gold: #C08A2E;             /* Accent Gold */
 
   /* Website-only action color */
-  --rust: #B5502E;             /* CTA buttons and links only */
+  --rust: #B5502E;             /* CTA buttons */
+  --rust-deep: #96401F;        /* button hover */
 
-  /* Supporting shades (not in the brand stylesheet) */
-  --parchment-deep: #F2EDE1;   /* the old site parchment, for section bands */
-  --navy-soft: #2E4062;
+  /* Page surfaces */
+  --paper: #F8F4EA;            /* page background (slightly warmer than brand cream) */
+  --paper-dim: #EFE8D8;        /* alternating section bands */
+
+  /* Text and lines */
   --ink: #24211B;
-  --line: rgba(27, 42, 74, 0.14);
+  --ink-soft: #4A463D;
+  --denim: #2E4062;            /* links, step numbers, bullets */
+  --rule: rgba(27, 42, 74, 0.14);
+
+  /* Footer */
+  --charcoal: #1B2A4A;         /* navy footer; the cream logo needs a dark background */
+  --charcoal-text: #F3EDE0;
+
+  --max: 60ch;
 }
 
   * { box-sizing: border-box; }
