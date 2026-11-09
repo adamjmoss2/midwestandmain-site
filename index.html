@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Midwest & Main — Automation for Small Businesses</title>
-<meta name="description" content="Practical automation for small and rural businesses. Save time, follow up with every lead, and spend less of your day on busywork. Free discovery calls.">
+<title>Midwest & Main — Custom AI Solutions for Small Business</title><meta name="description" content="Practical automation for small and rural businesses. Save time, follow up with every lead, and spend less of your day on busywork. Free discovery calls.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -91,12 +90,17 @@
     line-height: 0;
   }
   .wordmark img {
-    height: 200px;
-    width: auto;
+    header .wordmark img {
+    width: min(520px, 100%);
+    height: auto;
     display: block;
   }
-  nav { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
-  nav a {
+
+  @media (max-width: 720px) {
+    header { padding: 20px 0; }
+    header .wrap { justify-content: center; }
+    nav { justify-content: center; gap: 20px; }
+  }  nav a {
     font-size: 0.95rem;
     color: var(--ink-soft);
     text-decoration: none;
