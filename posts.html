@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook Posting Packs | Midwest & Main LLC</title>
+<meta name="description" content="Three ways to post consistently on Facebook without paying for ads: a $19 Playbook, a $149 Custom Posts Pack, or a managed 3-month sprint.">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+ :root {
+  /* Official brand colors (from logo stylesheet) */
+  --navy: #1B2A4A;             /* Dark Navy */
+  --cream: #FDFBF7;            /* Warm Cream */
+  --gold: #C08A2E;             /* Accent Gold */
+
+  /* Website-only action color */
+  --rust: #B5502E;             /* CTA buttons */
+  --rust-deep: #96401F;        /* button hover */
+
+  /* Page surfaces */
+  --paper: #F8F4EA;            /* page background (slightly warmer than brand cream) */
+  --paper-dim: #EFE8D8;        /* alternating section bands */
+
+  /* Text and lines */
+  --ink: #24211B;
+  --ink-soft: #4A463D;
+  --denim: #2E4062;            /* links, step numbers, bullets */
+  --rule: rgba(27, 42, 74, 0.14);
+
+  /* Footer */
+  --charcoal: #1B2A4A;         /* navy footer; the cream logo needs a dark background */
+  --charcoal-text: #F3EDE0;
+
+  --max: 60ch;
+}
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.15;
+  }
+
+  a { color: var(--denim); text-decoration-color: rgba(46,69,96,0.35); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--denim); }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--denim);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  .prose { max-width: var(--max); }
+
+  /* ---------- Header ---------- */
+  header {
+    padding: 26px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .wordmark {
+    display: inline-block;
+    line-height: 0;
+  }
+  header .wordmark img {
+    width: 520px;
+    max-width: 100%;    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 720px) {
+    header { padding: 20px 0; }
+    header .wrap { justify-content: center; }
+    nav { justify-content: center; gap: 20px; }
+  }
+  nav { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  nav a {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  nav a:hover { color: var(--ink); border-bottom-color: var(--gold); }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 84px 0 72px; }
+  .hero h1 {
+    font-size: clamp(2.1rem, 4.4vw, 3.15rem);
+    letter-spacing: -0.01em;
+    max-width: 22ch;
+  }
+  .hero .lede {
+    margin-top: 26px;
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+  .hero .lede strong { color: var(--ink); font-weight: 600; }
+
+  .cta-row { margin-top: 38px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--rust);
+    color: #FBF6EC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 26px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid var(--rust-deep);
+  }
+  .btn-primary:hover { background: var(--rust-deep); }
+
+  .btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 26px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 2px solid var(--navy);
+  }
+  .btn-secondary:hover { background: var(--navy); color: var(--cream); }
+
+  .btn-gold {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 26px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid var(--gold);
+  }
+  .btn-gold:hover { background: #D69A38; border-color: #D69A38; }
+
+  .cta-note { margin: 14px 0 0; font-size: 0.92rem; color: var(--ink-soft); font-style: italic; }
+
+  /* ---------- Posting packs band ---------- */
+  .packs { background: var(--navy); color: var(--cream); }
+  .packs .section-head h2 { color: var(--cream); }
+  .packs .section-head p { color: #D9D3C4; }
+  .packs .eyebrow {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .tier {
+    position: relative;
+    background: var(--cream);
+    color: var(--ink);
+    border-radius: 4px;
+    border-top: 4px solid var(--rule);
+    padding: 26px 24px 28px;
+  }
+  .tier.featured { border-top-color: var(--gold); }
+  .tier .tag {
+    position: absolute;
+    top: -14px;
+    right: 18px;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+  .tier .tier-name { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--denim); margin: 0 0 6px; }
+  .tier h3 { font-size: 1.35rem; margin-bottom: 10px; }
+  .tier .price { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--navy); line-height: 1; }
+  .tier .price small { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; color: var(--ink-soft); margin-left: 4px; }
+  .tier p { margin: 14px 0 0; color: var(--ink-soft); font-size: 0.98rem; }
+  .packs-cta { margin-top: 36px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .packs-note { font-size: 0.92rem; color: #D9D3C4; font-style: italic; }
+
+  @media (max-width: 860px) {
+    .tiers { grid-template-columns: 1fr; gap: 28px; }
+  }
+
+  /* ---------- Section shell ---------- */
+  section { padding: 68px 0; }
+  .section-alt { background: var(--paper-dim); }
+  .section-head { max-width: 60ch; margin-bottom: 40px; }
+  .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.05rem); }
+  .section-head p { margin-top: 14px; color: var(--ink-soft); font-size: 1.05rem; }
+
+  /* ---------- Services: menu-board list ---------- */
+  .service-list { border-top: 1px solid var(--rule); }
+  .service-row {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .service-row h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+  }
+  .service-row h3::before {
+    content: "";
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--denim);
+    margin-right: 10px;
+    transform: translateY(-2px);
+  }
+  .service-row p { margin: 0; color: var(--ink-soft); max-width: 46ch; }
+
+  @media (max-width: 640px) {
+    .service-row { grid-template-columns: 1fr; gap: 8px; }
+  }
+
+  /* ---------- How it works ---------- */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    margin-top: 8px;
+  }
+  .step { border-top: 3px solid var(--denim); padding-top: 18px; }
+  .step .num {
+    font-family: 'Fraunces', serif;
+    font-size: 2.1rem;
+    color: var(--denim);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .step h3 { font-size: 1.1rem; margin-bottom: 8px; }
+  .step p { margin: 0; color: var(--ink-soft); font-size: 0.98rem; }
+
+  @media (max-width: 720px) {
+    .steps { grid-template-columns: 1fr; gap: 30px; }
+  }
+
+  /* ---------- About ---------- */
+  .about-block {
+    display: flex;
+    gap: 44px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .about-block .photo {
+    width: 160px;
+    flex-shrink: 0;
+  }
+  .about-block .photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
+  }
+  .about-block .prose p { margin: 0 0 16px; color: var(--ink-soft); font-size: 1.05rem; }
+  .about-block .prose p:last-child { margin-bottom: 0; }
+  .about-block .prose strong { color: var(--ink); }
+
+  /* ---------- Final CTA ---------- */
+  .final-cta { text-align: left; }
+  .final-cta h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); max-width: 20ch; }
+  .final-cta p { margin-top: 16px; color: var(--ink-soft); font-size: 1.08rem; max-width: 52ch; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: var(--charcoal);
+    color: var(--charcoal-text);
+    padding: 48px 0 36px;
+  }
+  footer .wordmark img { height: 150px; width: auto; display: block; }
+  footer .foot-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 22px;
+  }
+  footer a { color: var(--charcoal-text); text-decoration-color: rgba(220,212,194,0.4); }
+  footer a:hover { text-decoration-color: var(--charcoal-text); }
+  .foot-meta { color: #A79E8C; font-size: 0.9rem; max-width: 40ch; }
+  .foot-links a { margin-right: 18px; }
+  .foot-copy { margin-top: 36px; font-size: 0.85rem; color: #8B8272; }
+
+  ::selection { background: var(--gold); color: var(--ink); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  /* ---------- Posts page ---------- */
+  .page-hero { padding: 72px 0 56px; }
+  .page-hero h1 { font-size: clamp(2.1rem, 4.4vw, 3.15rem); letter-spacing: -0.01em; max-width: 20ch; }
+  .page-hero .lede { margin-top: 24px; font-size: 1.15rem; color: var(--ink-soft); max-width: 60ch; }
+  .page-hero .lede + .lede { margin-top: 14px; }
+
+  .tier-full {
+    background: var(--cream);
+    border: 1px solid var(--rule);
+    border-top: 4px solid var(--rule);
+    border-radius: 4px;
+    padding: 34px 34px 38px;
+    margin-bottom: 28px;
+    position: relative;
+  }
+  .tier-full.featured { border-top-color: var(--gold); }
+  .tier-full .tag {
+    position: absolute; top: -14px; right: 24px;
+    background: var(--gold); color: var(--navy);
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 3px;
+  }
+  .tier-full .tier-name { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--denim); margin: 0 0 6px; }
+  .tier-full h2 { font-size: clamp(1.5rem, 3vw, 1.9rem); }
+  .tier-full .price-line { margin-top: 14px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .tier-full .price { font-family: 'Fraunces', serif; font-size: 2.4rem; font-weight: 600; color: var(--navy); line-height: 1; }
+  .tier-full .price-note { color: var(--ink-soft); font-size: 0.95rem; }
+  .tier-full .sub { margin: 18px 0 0; font-weight: 600; color: var(--ink); max-width: 62ch; }
+  .tier-full p { color: var(--ink-soft); max-width: 66ch; }
+  .tier-full h3 { font-size: 1.05rem; margin: 26px 0 10px; }
+  .tier-full ul { margin: 0; padding-left: 20px; max-width: 70ch; color: var(--ink-soft); }
+  .tier-full li { margin-bottom: 8px; }
+  .tier-full .best { margin-top: 22px; color: var(--ink); }
+  .tier-full .small { font-size: 0.95rem; font-style: italic; }
+  .tier-full .btn-row { margin-top: 26px; }
+
+  .compare-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.compare { border-collapse: collapse; width: 100%; min-width: 720px; font-size: 0.95rem; background: var(--cream); }
+  table.compare th, table.compare td { border: 1px solid var(--rule); padding: 12px 14px; text-align: left; vertical-align: top; }
+  table.compare thead th { background: var(--navy); color: var(--cream); font-weight: 600; }
+  table.compare tbody th { font-weight: 600; color: var(--ink); background: var(--paper-dim); width: 16%; }
+  table.compare td { color: var(--ink-soft); }
+
+  .steps.four { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 720px) { .steps.four { grid-template-columns: 1fr; } }
+
+  .plain-list { margin: 18px 0 0; padding-left: 20px; max-width: 66ch; color: var(--ink-soft); }
+  .plain-list li { margin-bottom: 10px; }
+  .plain-list strong { color: var(--ink); }
+  .note { margin-top: 22px; max-width: 66ch; color: var(--ink-soft); font-style: italic; }
+
+  .faq { max-width: 70ch; border-top: 1px solid var(--rule); }
+  .faq details { border-bottom: 1px solid var(--rule); padding: 16px 0; }
+  .faq summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+  .faq details p { margin: 12px 0 0; color: var(--ink-soft); }
+
+  @media (max-width: 640px) { .tier-full { padding: 26px 20px 30px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="index.html" class="wordmark"><img src="mm-logo.png" alt="Midwest & Main: Custom AI Solutions for Small Business" style="width:520px;max-width:100%;height:auto;display:block;"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#options">Options</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">Questions</a>
+      <a href="mailto:adam@midwestandmain.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Post consistently. Skip the ad spend.</h1>
+      <p class="lede">Your customers are on Facebook. The problem is not that you have nothing to say. Posting falls to the bottom of the list, so weeks go by with nothing new.</p>
+      <p class="lede">Midwest and Main helps local businesses go from sporadic posting to a steady 2 posts a week, planned ahead of time. Muse drafts the posts from your real business information, and you stay in control: you review, approve, and post. No Facebook ads required.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#options">See the three options</a>
+        <span class="cta-note">Start where your time allows.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="options" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Which option fits you?</h2>
+        <p>If you have time and want to learn the system, start with the Playbook. If you want the posts written for you and you are happy to add a photo and hit post, the Custom Posts Pack is built for you, and it is the best value here. If you want it handled for you, the Managed Sprint is a short, capped sprint with limited spots.</p>
+      </div>
+
+      <!-- TIER 1 -->
+      <article class="tier-full" id="playbook">
+        <p class="tier-name">Tier 1 &middot; Do it yourself</p>
+        <h2>The Playbook</h2>
+        <div class="price-line"><span class="price">$19</span><span class="price-note">One-time payment &middot; Instant download</span></div>
+        <p class="sub">The Consistent Posts Playbook: How to Use Muse to Plan 2 Facebook Posts a Week</p>
+        <p>A practical, plain-English guide for owners who post when they remember to, and want a rhythm instead.</p>
+        <h3>What is inside</h3>
+        <ul>
+          <li>Why consistency matters more than volume, and what 2 posts a week does for your footprint without ad spend</li>
+          <li>The basics of a simple campaign: content pillars, a monthly topic list, and planning a month at a time instead of post by post</li>
+          <li>The 5 post types that work for local shops and services: services, behind the scenes, seasonal and timely, community and customers, and offers and reminders</li>
+          <li>Step by step: how to use Muse to generate, draft, and schedule posts, with you approving every post before it goes out</li>
+          <li>A caption formula that works: hook, 2&ndash;3 short lines, clear call to action, and your hours or contact details</li>
+          <li>A photo checklist: what to shoot on your phone, what to post when you have no photo, and how to batch photos in 15 minutes</li>
+          <li>A copy-and-use 4-week starter calendar (8 posts) so you can start this week</li>
+          <li>Reply help, not just posts: a chapter on answering comments, 5 copy-and-use reply templates, and a prompt for getting Muse to draft a reply you review before posting</li>
+          <li>A 10-minute end-of-day reply routine, so comments do not pile up</li>
+          <li>The simple 3-number check: about 5 minutes, once a month, so you can see whether it is working without a spreadsheet of metrics</li>
+        </ul>
+        <p class="best"><strong>Best for:</strong> owners who want to do it themselves and just need a clear system.</p>
+        <p class="small">PDF ebook, delivered as a download right after checkout. Licensed to one business, yours to keep.</p>
+        <div class="btn-row"><a class="btn-primary" href="#" data-todo="playbook-checkout">Get the Playbook &mdash; $19</a></div>
+      </article>
+
+      <!-- TIER 2 -->
+      <article class="tier-full featured" id="posts-pack">
+        <span class="tag">Most popular</span>
+        <p class="tier-name">Tier 2 &middot; Written for you</p>
+        <h2>Custom Posts Pack</h2>
+        <div class="price-line"><span class="price">$149</span><span class="price-note">One-time payment &middot; Playbook included</span></div>
+        <p class="sub">52 posts for 6 months, plus 12 seasonal bonus posts to swap in (64 total). About $2.33 a post.</p>
+        <p>You fill out one short form. We build your posts from your website, Facebook Page, and Google Business Profile, plus the goals and services you tell us matter most. You add a photo and post. That is your whole job.</p>
+        <h3>What you get</h3>
+        <ul>
+          <li>Everything in the Playbook, included</li>
+          <li>52 posts for 6 months: ready-to-post captions, 2 posts a week for 26 weeks, organized by month</li>
+          <li>Plus 12 seasonal bonus posts to swap in, 64 posts total</li>
+          <li>Every post includes the caption, a photo idea, a call to action, and a suggested posting day</li>
+          <li>Written in your voice, about your services, for your town and customers, not generic templates with your name pasted in</li>
+          <li>Delivered as a Google Doc and a PDF, so you can copy, edit, and schedule at your own pace</li>
+          <li>A short recorded walkthrough (watch anytime) showing how to add photos, schedule in Facebook, and make a quick edit</li>
+          <li>7 days of email support after delivery for fixes: a wrong hour, a service you no longer offer, a name spelled wrong</li>
+          <li>A custom reply bank built for your business: 10&ndash;15 ready replies for your real FAQs and services, so answering comments takes seconds. You review and post them yourself.</li>
+          <li>A baseline snapshot taken before you start, and a simple before-and-after check at 90 days and 6 months using the same 3 numbers</li>
+        </ul>
+        <p class="best"><strong>Best for:</strong> busy owners who want consistent posting without writing it themselves or paying for ads.</p>
+        <p class="small">Turnaround: delivered in 3&ndash;5 business days after you complete the intake form. This is customized work, not an instant download, and that short wait is what keeps the quality up. No call required. If you would like one, add a 30-minute walkthrough call at checkout for $75.</p>
+        <div class="btn-row"><a class="btn-primary" href="#" data-todo="pack-checkout">Get My 52 Posts for 6 Months &mdash; $149</a></div>
+      </article>
+
+      <!-- TIER 3 -->
+      <article class="tier-full" id="managed-sprint">
+        <p class="tier-name">Tier 3 &middot; Done for you</p>
+        <h2>Managed Sprint</h2>
+        <div class="price-line"><span class="price">$1,499</span><span class="price-note">3-month sprint &middot; Application only &middot; Limited spots</span></div>
+        <p class="sub">$1,499 for 3 months, which is $500 a month, managed. We plan it, draft it, and schedule it.</p>
+        <p>For owners who do not want another task on their list at all. This is hands-on and personal, so only a few clients are taken on at a time.</p>
+        <h3>What is included</h3>
+        <ul>
+          <li>60-minute discovery call to learn your business, your customers, and what you want these posts to drive: calls, bookings, foot traffic, or sales</li>
+          <li>Facebook Page and scheduling setup or cleanup, so posting runs cleanly from the start</li>
+          <li>Your content pillars set from your real services, offers, and seasons</li>
+          <li>2 posts a week for 3 months, drafted with Muse, reviewed by a human, and scheduled for you. You approve before anything goes live.</li>
+          <li>Simple photo prompts each month, so you know exactly which phone photos to send</li>
+          <li>Comment replies handled with you: comments are checked once or twice a day, Muse drafts replies, you approve the exact wording, and the approved replies are posted for you. Complaints and problems are flagged to you, never argued with in public.</li>
+          <li>Monthly 30-minute check-in and a one-page report built on the same 3 numbers, plus one plain line on what worked best and what to do next month</li>
+        </ul>
+        <p class="best"><strong>Best for:</strong> businesses with no time to post at all, launching something new, or heading into their busiest season.</p>
+        <p class="small">After the sprint, continue month to month at $297/month, or step down to a Custom Posts Pack and keep posting on your own. No long contract. Spots are limited because this tier is managed personally.</p>
+        <div class="btn-row"><a class="btn-primary" href="mailto:adam@midwestandmain.com?subject=Managed%20Sprint%20application">Apply for a Discovery Call</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Compare the three options</h2>
+        <p>Not sure? Start with the Custom Posts Pack. Most owners do not need ongoing management. They need the writing done.</p>
+      </div>
+      <div class="compare-wrap">
+        <table class="compare">
+          <thead><tr><th></th><th>Playbook</th><th>Custom Posts Pack</th><th>Managed Sprint</th></tr></thead>
+          <tbody>
+            <tr><th>Price</th><td>$19 one-time</td><td>$149 one-time</td><td>$1,499 / 3 months</td></tr>
+            <tr><th>Who posts?</th><td>You</td><td>You (posts are written for you)</td><td>We schedule for you</td></tr>
+            <tr><th>Ebook included</th><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th>Posts included</th><td>Starter calendar: 8</td><td>52 for 6 months + 12 seasonal bonus = 64 total</td><td>2 a week for 3 months</td></tr>
+            <tr><th>Custom to your business</th><td>No, a general guide</td><td>Yes, from your form and profiles</td><td>Yes, plus a discovery call</td></tr>
+            <tr><th>Personal call</th><td>No</td><td>Optional add-on: $75 / 30 min</td><td>Yes, discovery plus monthly</td></tr>
+            <tr><th>Comment reply help</th><td>Templates and a Muse prompt</td><td>Custom reply bank (10&ndash;15)</td><td>Drafted for you, you approve</td></tr>
+            <tr><th>Simple results check</th><td>Do it yourself, monthly</td><td>Baseline, then check at 90 days and 6 months</td><td>Monthly one-page report</td></tr>
+            <tr><th>Turnaround</th><td>Instant download</td><td>3&ndash;5 business days</td><td>Starts after discovery call</td></tr>
+            <tr><th>Best for</th><td>DIY owners</td><td>Busy owners, best value</td><td>No time at all</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Know it is working, with just 3 numbers</h2>
+        <p>You do not need to track a dozen metrics. That is how people quit. Every option uses the same simple check, once a month, in about 5 minutes.</p>
+      </div>
+      <ul class="plain-list">
+        <li><strong>Did we post?</strong> Posts published this month. The target is 8: 2 a week, as planned.</li>
+        <li><strong>Did people see it?</strong> Reach per post: total reach divided by the number of posts. This shows whether each post is reaching more people, not just whether you posted more often.</li>
+        <li><strong>Did anyone act?</strong> Total actions: messages started, link clicks, and calls (calls only if your Page has a Call button), added together.</li>
+      </ul>
+      <p class="note">No promises about follower counts or sales. Just clear proof of consistency, visibility, and action.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Do not leave comments hanging</h2>
+        <p>Posting is only half the job. When someone comments and hears nothing back, the conversation, and often the sale, stops there. Replying also keeps the conversation going, which can help a post be shown to more people. Every option includes help with replies.</p>
+      </div>
+      <p class="prose" style="color:var(--ink-soft);margin:0 0 16px;">How it works, in every option: Muse drafts a reply, a person approves the exact wording, and only then is it posted. Nothing replies automatically on its own. That approval step is what keeps replies safe on price questions, complaints, and anything sensitive.</p>
+      <ul class="plain-list">
+        <li><strong>Thank you or compliment:</strong> a short, warm reply, by name when possible.</li>
+        <li><strong>Question:</strong> hours, price, availability, or which option fits them best, answered plainly.</li>
+        <li><strong>Ready to book or buy:</strong> one clear next step, not a sales pitch.</li>
+        <li><strong>Problem or complaint:</strong> never argued with in public. A calm draft is prepared and flagged for the owner, and the conversation moves to a message or a phone call.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How the Custom Posts Pack works</h2>
+        <p>Four steps, and you never hand over your Facebook password.</p>
+      </div>
+      <div class="steps four">
+        <div class="step"><span class="num">1</span><h3>Check out and fill in the form</h3><p>About 10 minutes: your website, Facebook Page, and Google Business Profile links, your top services, your goals, your busiest seasons, and anything to avoid.</p></div>
+        <div class="step"><span class="num">2</span><h3>Your information is pulled together</h3><p>Details are gathered from the public pages you shared and checked against what you wrote. Your form answers win if there is a conflict.</p></div>
+        <div class="step"><span class="num">3</span><h3>Your posts are drafted and checked</h3><p>Captions are drafted with Muse from that real information and reviewed for accuracy, tone, and repeats before they are sent to you.</p></div>
+        <div class="step"><span class="num">4</span><h3>You post in minutes</h3><p>Add a photo using the photo idea on each post, copy the caption, and post or schedule it. The Playbook and walkthrough video show you how.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions, answered plainly</h2></div>
+      <div class="faq">
+        <details><summary>Do I need to pay for Facebook ads?</summary><p>No. Every option is about organic posting: showing up consistently in front of people who already follow you and the people they share you with. Ads are a separate choice, and nothing here requires them.</p></details>
+        <details><summary>Do I need a Facebook Business Page?</summary><p>Yes, a business Page, not just a personal profile. The Playbook is written for business Pages. If you only have a personal profile, the Managed Sprint includes setup help.</p></details>
+        <details><summary>Where do the photos come from?</summary><p>From you, on your phone. Every Custom Posts Pack and Managed Sprint post comes with a specific photo idea, and the Playbook includes a checklist. Real photos of your shop, work, and team fit local businesses better than stock photos.</p></details>
+        <details><summary>What if a post is wrong or I do not like it?</summary><p>Edit it. The posts are yours. The Custom Posts Pack includes 7 days of email support for factual fixes after delivery. You approve every post before it goes live in every option, so nothing posts automatically without you.</p></details>
+        <details><summary>How fast do I get the Custom Posts Pack?</summary><p>3&ndash;5 business days after your intake form is complete. If your form is missing key details, that clock starts once those details arrive.</p></details>
+        <details><summary>Can I get a call with the Custom Posts Pack?</summary><p>A call is not included, on purpose. That is how the pack stays at $149. You get a recorded walkthrough instead. If you want a live walkthrough, add the 30-minute call for $75 at checkout.</p></details>
+        <details><summary>Will this guarantee more customers?</summary><p>No honest service can guarantee that. What this does deliver is the part most businesses struggle with: showing up consistently, with accurate, well-written posts, week after week. That consistency gives Facebook, and your customers, something to respond to.</p></details>
+        <details><summary>Do comment replies post automatically?</summary><p>No. Muse drafts the reply and a person approves the exact wording before anything is posted, in every option. Problems and complaints are flagged for the owner instead of being answered in public.</p></details>
+        <details><summary>What happens after my 6 months run out?</summary><p>Order another pack, move up to a Managed Sprint for your busy season, or keep going on your own with the Playbook system. There is no subscription and no auto-charge.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="final-cta section-alt">
+    <div class="wrap">
+      <h2>Ready to stop posting at random?</h2>
+      <p>Pick the level of help that matches the time you actually have. Start this week with the Playbook, or let the next 6 months be written for you. Questions before you buy? Email me and ask. A short answer now beats the wrong choice later.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#options">See the three options</a>
+        <a class="btn-secondary" href="mailto:adam@midwestandmain.com">Email adam@midwestandmain.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="index.html" class="wordmark"><img src="logo-cream-on-navy.png" alt="Midwest & Main"></a>
+    <div class="foot-grid">
+      <p class="foot-meta">Based in Le Mars, Iowa &mdash; working with small businesses across the Midwest and beyond.</p>
+      <p class="foot-meta"><a href="mailto:adam@midwestandmain.com">adam@midwestandmain.com</a></p>
+      <p class="foot-meta foot-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms and Conditions</a></p>
+    </div>
+    <p class="foot-copy">&copy; 2026 Midwest &amp; Main LLC. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
