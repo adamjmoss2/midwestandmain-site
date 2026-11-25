@@ -219,6 +219,18 @@
   .tier .price { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--navy); line-height: 1; }
   .tier .price small { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; color: var(--ink-soft); margin-left: 4px; }
   .tier p { margin: 14px 0 0; color: var(--ink-soft); font-size: 0.98rem; }
+  .beforeafter { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 26px; }
+  .beforeafter > div {
+    border: 1px solid rgba(253,251,247,0.25);
+    border-top: 4px solid rgba(253,251,247,0.35);
+    border-radius: 4px;
+    padding: 20px 24px;
+  }
+  .beforeafter > div.after { border-top-color: var(--gold); background: rgba(253,251,247,0.06); }
+  .beforeafter h3 { font-size: 0.85rem; font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .beforeafter p { margin: 0; color: var(--cream); font-size: 1.05rem; }
+  @media (max-width: 720px) { .beforeafter { grid-template-columns: 1fr; gap: 16px; } }
+
   .muse-strip {
     margin-top: 30px;
     border: 1px solid rgba(253,251,247,0.25);
@@ -372,7 +384,7 @@
       </p>
       <div class="cta-row">
         <a class="btn-primary" href="#contact">Book a free discovery call</a>
-        <a class="btn-secondary" href="#posting-packs">Facebook posting with Muse, from $19</a>
+        <a class="btn-secondary" href="#posting-packs">Facebook posts drafted by AI, from $19</a>
       </div>
       <p class="cta-note">No pitch on the call. Just a conversation about your business.</p>
     </div>
@@ -382,8 +394,18 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Facebook posting packs</span>
-        <h2>Post consistently. Skip the ad spend.</h2>
-        <p>Go from sporadic posting to a steady 2 posts a week, planned ahead of time. Muse, Meta's AI assistant, does the drafting. You review, approve, and post. No Facebook ads required.</p>
+        <h2>Stop staring at a blank screen.</h2>
+        <p>Muse, Meta's AI assistant, drafts your Facebook posts. You approve, add a photo, and post. Go from sporadic posting to a steady 2 posts a week, with no ads required.</p>
+      </div>
+      <div class="beforeafter">
+        <div>
+          <h3>Before</h3>
+          <p>A blank screen. Posting when you remember. Weeks with nothing new.</p>
+        </div>
+        <div class="after">
+          <h3>After</h3>
+          <p>Drafts waiting for you. You approve, add a photo, and post. A steady 2 posts a week.</p>
+        </div>
       </div>
       <div class="tiers">
         <div class="tier">
