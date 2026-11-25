@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Midwest & Main LLC— Custom AI Solutions for Small Businesses</title>
-<meta name="description" content="Practical AI solutions for small businesses. Save time, follow up with every lead, and spend less of your day on busywork. Free discovery calls.">
+<meta name="description" content="Practical AI solutions for small businesses. Save time, follow up with every lead, and spend less of your day on busywork. Free discovery calls. Plus Facebook posting packs, from $19.">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -144,7 +144,87 @@
   }
   .btn-primary:hover { background: var(--rust-deep); }
 
-  .cta-note { font-size: 0.92rem; color: var(--ink-soft); font-style: italic; }
+  .btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 26px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 2px solid var(--navy);
+  }
+  .btn-secondary:hover { background: var(--navy); color: var(--cream); }
+
+  .btn-gold {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 26px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid var(--gold);
+  }
+  .btn-gold:hover { background: #D69A38; border-color: #D69A38; }
+
+  .cta-note { margin: 14px 0 0; font-size: 0.92rem; color: var(--ink-soft); font-style: italic; }
+
+  /* ---------- Posting packs band ---------- */
+  .packs { background: var(--navy); color: var(--cream); }
+  .packs .section-head h2 { color: var(--cream); }
+  .packs .section-head p { color: #D9D3C4; }
+  .packs .eyebrow {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .tier {
+    position: relative;
+    background: var(--cream);
+    color: var(--ink);
+    border-radius: 4px;
+    border-top: 4px solid var(--rule);
+    padding: 26px 24px 28px;
+  }
+  .tier.featured { border-top-color: var(--gold); }
+  .tier .tag {
+    position: absolute;
+    top: -14px;
+    right: 18px;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+  .tier .tier-name { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--denim); margin: 0 0 6px; }
+  .tier h3 { font-size: 1.35rem; margin-bottom: 10px; }
+  .tier .price { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; color: var(--navy); line-height: 1; }
+  .tier .price small { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; color: var(--ink-soft); margin-left: 4px; }
+  .tier p { margin: 14px 0 0; color: var(--ink-soft); font-size: 0.98rem; }
+  .packs-cta { margin-top: 36px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .packs-note { font-size: 0.92rem; color: #D9D3C4; font-style: italic; }
+
+  @media (max-width: 860px) {
+    .tiers { grid-template-columns: 1fr; gap: 28px; }
+  }
 
   /* ---------- Section shell ---------- */
   section { padding: 68px 0; }
@@ -264,6 +344,7 @@
   <div class="wrap">
     <a href="#top" class="wordmark"><img src="mm-logo.png" alt="Midwest & Main: Custom AI Solutions for Small Business" style="width:520px;max-width:100%;height:auto;display:block;"></a>    <nav>
       <a href="#services">Services</a>
+      <a href="#posting-packs">Posting Packs</a>
       <a href="#how">How it works</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -281,7 +362,43 @@
       </p>
       <div class="cta-row">
         <a class="btn-primary" href="#contact">Book a free discovery call</a>
-        <span class="cta-note">No pitch. Just a conversation about your business.</span>
+        <a class="btn-secondary" href="#posting-packs">Facebook posting packs, from $19</a>
+      </div>
+      <p class="cta-note">No pitch on the call. Just a conversation about your business.</p>
+    </div>
+  </section>
+
+  <section id="posting-packs" class="packs">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Facebook posting packs</span>
+        <h2>Post consistently. Skip the ad spend.</h2>
+        <p>Go from sporadic posting to a steady 2 posts a week, planned ahead of time. Muse drafts the posts, you review and approve every one. No Facebook ads required.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier">
+          <p class="tier-name">Do it yourself</p>
+          <h3>The Playbook</h3>
+          <div class="price">$19 <small>one-time</small></div>
+          <p>A plain-English guide to planning 2 Facebook posts a week with Muse. Instant PDF download.</p>
+        </div>
+        <div class="tier featured">
+          <span class="tag">Most popular</span>
+          <p class="tier-name">Written for you</p>
+          <h3>Custom Posts Pack</h3>
+          <div class="price">$149 <small>one-time</small></div>
+          <p>52 posts for 6 months, written for your business, plus 12 seasonal bonus posts to swap in. Playbook included.</p>
+        </div>
+        <div class="tier">
+          <p class="tier-name">Done for you</p>
+          <h3>Managed Sprint</h3>
+          <div class="price">$1,499 <small>for 3 months</small></div>
+          <p>We plan, draft, and schedule your posts for a season, and you approve everything. Application only, limited spots.</p>
+        </div>
+      </div>
+      <div class="packs-cta">
+        <a class="btn-gold" href="posts.html">See pricing and details</a>
+        <span class="packs-note">Nothing posts without your approval.</span>
       </div>
     </div>
   </section>
